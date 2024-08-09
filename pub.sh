@@ -12,6 +12,7 @@ git push --set-upstream origin main
 git branch -M main
 git push -u origin main
 
+# git remote add origin
 git add .
 git commit -m "First commit"
 git push 
