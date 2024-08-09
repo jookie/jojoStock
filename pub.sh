@@ -4,9 +4,18 @@
 # git add .
 # git commit -m "Your commit message"
 # git push --set-upstream origin https://github.com/jookie/PhotoDrone.git
+
+
+# git remote add origin
+# git remote add origin https://github.com/jookie/jojoStock.git
+# git branch -M main
+# git push -u origin main
+
 git add .
 git commit -m "First commit"
 git push 
+
+
 # Creating a New Git Repository on a Hosting Service (e.g., GitHub, GitLab):
 # 1. Create a Repository on the Hosting Service:
 # For GitHub:
