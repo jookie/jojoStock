@@ -7,9 +7,9 @@
 
 
 # git remote add origin
-# git remote add origin https://github.com/jookie/jojoStock.git
-# git branch -M main
-# git push -u origin main
+git remote add origin https://github.com/jookie/jojoStock.git
+git branch -M main
+git push -u origin main
 
 git add .
 git commit -m "First commit"
