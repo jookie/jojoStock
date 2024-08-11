@@ -4288,6 +4288,15 @@
         "documentation": {}
     },
     {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
         "label": "FuncAnimation",
         "importPath": "matplotlib.animation",
         "description": "matplotlib.animation",
@@ -4616,6 +4625,14 @@
         "description": "setuptools",
         "isExtraImport": true,
         "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "ALPACA_API_BASE_URL",
+        "importPath": "examples.ExampleOFinrl.config",
+        "description": "examples.ExampleOFinrl.config",
+        "isExtraImport": true,
+        "detail": "examples.ExampleOFinrl.config",
         "documentation": {}
     },
     {
@@ -6947,6 +6964,33 @@
         "description": "examples.FinRL_PaperTrading_Demo_refactored",
         "peekOfCode": "ax = plt.gca()\nax.xaxis.set_major_locator(ticker.MultipleLocator(78))\nax.xaxis.set_minor_locator(ticker.MultipleLocator(6))\nax.yaxis.set_minor_locator(ticker.MultipleLocator(0.005))\nax.yaxis.set_major_formatter(ticker.PercentFormatter(xmax=1, decimals=2))\nax.xaxis.set_major_formatter(\n    ticker.FixedFormatter([\"\", \"10-19\", \"\", \"10-20\", \"\", \"10-21\", \"\", \"10-22\"])\n)\nplt.legend(fontsize=10.5)\nplt.savefig(\"papertrading_stock.png\")",
         "detail": "examples.FinRL_PaperTrading_Demo_refactored",
+        "documentation": {}
+    },
+    {
+        "label": "url",
+        "kind": 5,
+        "importPath": "examples.dataBars",
+        "description": "examples.dataBars",
+        "peekOfCode": "url = \"https://data.alpaca.markets/v2/stocks/auctions?symbols=AAPL%2CTSLA&start=2022-01-03T00%3A00%3A00Z&end=2022-01-04T00%3A00%3A00Z&limit=1000&feed=sip&sort=asc\"\nheaders = {\n    \"accept\": \"application/json\",\n    \"APCA-API-KEY-ID\": \"PKVD6WOSPEMKS0UI6A3K\",\n    \"APCA-API-SECRET-KEY\": \"RJICB6GmO6FPff1e8pGq5IArPYabYi2ZaAqpHEar\"\n}\nresponse = requests.get(url, headers=headers)\nprint(response.text)",
+        "detail": "examples.dataBars",
+        "documentation": {}
+    },
+    {
+        "label": "headers",
+        "kind": 5,
+        "importPath": "examples.dataBars",
+        "description": "examples.dataBars",
+        "peekOfCode": "headers = {\n    \"accept\": \"application/json\",\n    \"APCA-API-KEY-ID\": \"PKVD6WOSPEMKS0UI6A3K\",\n    \"APCA-API-SECRET-KEY\": \"RJICB6GmO6FPff1e8pGq5IArPYabYi2ZaAqpHEar\"\n}\nresponse = requests.get(url, headers=headers)\nprint(response.text)",
+        "detail": "examples.dataBars",
+        "documentation": {}
+    },
+    {
+        "label": "response",
+        "kind": 5,
+        "importPath": "examples.dataBars",
+        "description": "examples.dataBars",
+        "peekOfCode": "response = requests.get(url, headers=headers)\nprint(response.text)",
+        "detail": "examples.dataBars",
         "documentation": {}
     },
     {
@@ -10014,7 +10058,7 @@
         "kind": 5,
         "importPath": "t7",
         "description": "t7",
-        "peekOfCode": "API_KEY = \"PKVD6WOSPEMKS0UI6A3K\"\nAPI_SECRET = \"RJICB6GmO6FPff1e8pGq5IArPYabYi2ZaAqpHEar\"\nAPI_BASE_URL = 'https://paper-api.alpaca.markets'\nAPACA_EMAIL =  \"dpeles20@gmail.com\"\nAPACA_PWD1 = \"102774Dov9012\"\nAPACA_PWD2 = \"f1ecd682-009e-49fc-893e-bc595cc4e015\"\n# Initialize the Alpaca API\napi = tradeapi.REST(API_KEY, API_SECRET, API_BASE_URL, api_version='v2')\n# Specify the stock symbol and quantity you want to buy\nsymbol = \"AAPL\"",
+        "peekOfCode": "API_KEY = \"PKVD6WOSPEMKS0UI6A3K\"\nAPI_SECRET = \"RJICB6GmO6FPff1e8pGq5IArPYabYi2ZaAqpHEar\"\nAPI_BASE_URL = 'https://paper-api.alpaca.markets'\nAPACA_EMAIL =  \"dpeles20@gmail.com\"\nAPACA_PWD1 = \"102774Dov9012\"\nAPACA_PWD2 = \"f1ecd682-009e-49fc-893e-bc595cc4e015\"\nALPACA_DATA = \"https://data.alpaca.markets/v2/stocks/auctions?symbols=AAPL%2CTSLA&start=2022-01-03T00%3A00%3A00Z&end=2022-01-04T00%3A00%3A00Z&limit=1000&feed=sip&sort=asc\"\n# Initialize the Alpaca API\napi = tradeapi.REST(API_KEY, API_SECRET, API_BASE_URL, api_version='v2')\n# Specify the stock symbol and quantity you want to buy",
         "detail": "t7",
         "documentation": {}
     },
@@ -10023,7 +10067,7 @@
         "kind": 5,
         "importPath": "t7",
         "description": "t7",
-        "peekOfCode": "API_SECRET = \"RJICB6GmO6FPff1e8pGq5IArPYabYi2ZaAqpHEar\"\nAPI_BASE_URL = 'https://paper-api.alpaca.markets'\nAPACA_EMAIL =  \"dpeles20@gmail.com\"\nAPACA_PWD1 = \"102774Dov9012\"\nAPACA_PWD2 = \"f1ecd682-009e-49fc-893e-bc595cc4e015\"\n# Initialize the Alpaca API\napi = tradeapi.REST(API_KEY, API_SECRET, API_BASE_URL, api_version='v2')\n# Specify the stock symbol and quantity you want to buy\nsymbol = \"AAPL\"\nquantity = 10  # Number of shares to buy",
+        "peekOfCode": "API_SECRET = \"RJICB6GmO6FPff1e8pGq5IArPYabYi2ZaAqpHEar\"\nAPI_BASE_URL = 'https://paper-api.alpaca.markets'\nAPACA_EMAIL =  \"dpeles20@gmail.com\"\nAPACA_PWD1 = \"102774Dov9012\"\nAPACA_PWD2 = \"f1ecd682-009e-49fc-893e-bc595cc4e015\"\nALPACA_DATA = \"https://data.alpaca.markets/v2/stocks/auctions?symbols=AAPL%2CTSLA&start=2022-01-03T00%3A00%3A00Z&end=2022-01-04T00%3A00%3A00Z&limit=1000&feed=sip&sort=asc\"\n# Initialize the Alpaca API\napi = tradeapi.REST(API_KEY, API_SECRET, API_BASE_URL, api_version='v2')\n# Specify the stock symbol and quantity you want to buy\nsymbol = \"AAPL\"",
         "detail": "t7",
         "documentation": {}
     },
@@ -10032,7 +10076,7 @@
         "kind": 5,
         "importPath": "t7",
         "description": "t7",
-        "peekOfCode": "API_BASE_URL = 'https://paper-api.alpaca.markets'\nAPACA_EMAIL =  \"dpeles20@gmail.com\"\nAPACA_PWD1 = \"102774Dov9012\"\nAPACA_PWD2 = \"f1ecd682-009e-49fc-893e-bc595cc4e015\"\n# Initialize the Alpaca API\napi = tradeapi.REST(API_KEY, API_SECRET, API_BASE_URL, api_version='v2')\n# Specify the stock symbol and quantity you want to buy\nsymbol = \"AAPL\"\nquantity = 10  # Number of shares to buy\n# limit, stop, stop_limit orders. ",
+        "peekOfCode": "API_BASE_URL = 'https://paper-api.alpaca.markets'\nAPACA_EMAIL =  \"dpeles20@gmail.com\"\nAPACA_PWD1 = \"102774Dov9012\"\nAPACA_PWD2 = \"f1ecd682-009e-49fc-893e-bc595cc4e015\"\nALPACA_DATA = \"https://data.alpaca.markets/v2/stocks/auctions?symbols=AAPL%2CTSLA&start=2022-01-03T00%3A00%3A00Z&end=2022-01-04T00%3A00%3A00Z&limit=1000&feed=sip&sort=asc\"\n# Initialize the Alpaca API\napi = tradeapi.REST(API_KEY, API_SECRET, API_BASE_URL, api_version='v2')\n# Specify the stock symbol and quantity you want to buy\nsymbol = \"AAPL\"\nquantity = 10  # Number of shares to buy",
         "detail": "t7",
         "documentation": {}
     },
@@ -10041,7 +10085,7 @@
         "kind": 5,
         "importPath": "t7",
         "description": "t7",
-        "peekOfCode": "APACA_EMAIL =  \"dpeles20@gmail.com\"\nAPACA_PWD1 = \"102774Dov9012\"\nAPACA_PWD2 = \"f1ecd682-009e-49fc-893e-bc595cc4e015\"\n# Initialize the Alpaca API\napi = tradeapi.REST(API_KEY, API_SECRET, API_BASE_URL, api_version='v2')\n# Specify the stock symbol and quantity you want to buy\nsymbol = \"AAPL\"\nquantity = 10  # Number of shares to buy\n# limit, stop, stop_limit orders. \n# Place a market order to buy the specified quantity of AAPL",
+        "peekOfCode": "APACA_EMAIL =  \"dpeles20@gmail.com\"\nAPACA_PWD1 = \"102774Dov9012\"\nAPACA_PWD2 = \"f1ecd682-009e-49fc-893e-bc595cc4e015\"\nALPACA_DATA = \"https://data.alpaca.markets/v2/stocks/auctions?symbols=AAPL%2CTSLA&start=2022-01-03T00%3A00%3A00Z&end=2022-01-04T00%3A00%3A00Z&limit=1000&feed=sip&sort=asc\"\n# Initialize the Alpaca API\napi = tradeapi.REST(API_KEY, API_SECRET, API_BASE_URL, api_version='v2')\n# Specify the stock symbol and quantity you want to buy\nsymbol = \"AAPL\"\nquantity = 10  # Number of shares to buy\n# limit, stop, stop_limit orders. ",
         "detail": "t7",
         "documentation": {}
     },
@@ -10050,7 +10094,7 @@
         "kind": 5,
         "importPath": "t7",
         "description": "t7",
-        "peekOfCode": "APACA_PWD1 = \"102774Dov9012\"\nAPACA_PWD2 = \"f1ecd682-009e-49fc-893e-bc595cc4e015\"\n# Initialize the Alpaca API\napi = tradeapi.REST(API_KEY, API_SECRET, API_BASE_URL, api_version='v2')\n# Specify the stock symbol and quantity you want to buy\nsymbol = \"AAPL\"\nquantity = 10  # Number of shares to buy\n# limit, stop, stop_limit orders. \n# Place a market order to buy the specified quantity of AAPL\ntry:",
+        "peekOfCode": "APACA_PWD1 = \"102774Dov9012\"\nAPACA_PWD2 = \"f1ecd682-009e-49fc-893e-bc595cc4e015\"\nALPACA_DATA = \"https://data.alpaca.markets/v2/stocks/auctions?symbols=AAPL%2CTSLA&start=2022-01-03T00%3A00%3A00Z&end=2022-01-04T00%3A00%3A00Z&limit=1000&feed=sip&sort=asc\"\n# Initialize the Alpaca API\napi = tradeapi.REST(API_KEY, API_SECRET, API_BASE_URL, api_version='v2')\n# Specify the stock symbol and quantity you want to buy\nsymbol = \"AAPL\"\nquantity = 10  # Number of shares to buy\n# limit, stop, stop_limit orders. \n# Place a market order to buy the specified quantity of AAPL",
         "detail": "t7",
         "documentation": {}
     },
@@ -10059,7 +10103,16 @@
         "kind": 5,
         "importPath": "t7",
         "description": "t7",
-        "peekOfCode": "APACA_PWD2 = \"f1ecd682-009e-49fc-893e-bc595cc4e015\"\n# Initialize the Alpaca API\napi = tradeapi.REST(API_KEY, API_SECRET, API_BASE_URL, api_version='v2')\n# Specify the stock symbol and quantity you want to buy\nsymbol = \"AAPL\"\nquantity = 10  # Number of shares to buy\n# limit, stop, stop_limit orders. \n# Place a market order to buy the specified quantity of AAPL\ntry:\n    order = api.submit_order(",
+        "peekOfCode": "APACA_PWD2 = \"f1ecd682-009e-49fc-893e-bc595cc4e015\"\nALPACA_DATA = \"https://data.alpaca.markets/v2/stocks/auctions?symbols=AAPL%2CTSLA&start=2022-01-03T00%3A00%3A00Z&end=2022-01-04T00%3A00%3A00Z&limit=1000&feed=sip&sort=asc\"\n# Initialize the Alpaca API\napi = tradeapi.REST(API_KEY, API_SECRET, API_BASE_URL, api_version='v2')\n# Specify the stock symbol and quantity you want to buy\nsymbol = \"AAPL\"\nquantity = 10  # Number of shares to buy\n# limit, stop, stop_limit orders. \n# Place a market order to buy the specified quantity of AAPL\ntry:",
+        "detail": "t7",
+        "documentation": {}
+    },
+    {
+        "label": "ALPACA_DATA",
+        "kind": 5,
+        "importPath": "t7",
+        "description": "t7",
+        "peekOfCode": "ALPACA_DATA = \"https://data.alpaca.markets/v2/stocks/auctions?symbols=AAPL%2CTSLA&start=2022-01-03T00%3A00%3A00Z&end=2022-01-04T00%3A00%3A00Z&limit=1000&feed=sip&sort=asc\"\n# Initialize the Alpaca API\napi = tradeapi.REST(API_KEY, API_SECRET, API_BASE_URL, api_version='v2')\n# Specify the stock symbol and quantity you want to buy\nsymbol = \"AAPL\"\nquantity = 10  # Number of shares to buy\n# limit, stop, stop_limit orders. \n# Place a market order to buy the specified quantity of AAPL\ntry:\n    order = api.submit_order(",
         "detail": "t7",
         "documentation": {}
     },

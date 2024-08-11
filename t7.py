@@ -1,4 +1,5 @@
 import alpaca_trade_api as tradeapi
+from examples.ExampleOFinrl.config import ALPACA_API_BASE_URL
 
 # Replace with your API key, secret, and base URL
 API_KEY = "PKVD6WOSPEMKS0UI6A3K"
@@ -8,6 +9,7 @@ API_BASE_URL = 'https://paper-api.alpaca.markets'
 APACA_EMAIL =  "dpeles20@gmail.com"
 APACA_PWD1 = "102774Dov9012"
 APACA_PWD2 = "f1ecd682-009e-49fc-893e-bc595cc4e015"
+ALPACA_DATA = "https://data.alpaca.markets/v2/stocks/auctions?symbols=AAPL%2CTSLA&start=2022-01-03T00%3A00%3A00Z&end=2022-01-04T00%3A00%3A00Z&limit=1000&feed=sip&sort=asc"
 
 # Initialize the Alpaca API
 api = tradeapi.REST(API_KEY, API_SECRET, API_BASE_URL, api_version='v2')

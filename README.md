@@ -25,7 +25,7 @@ Keywords: Deep Reinforcement Learning, Markov Decision Process, Automated Stock 
 - [File Structure](#file-structure)
 - [Supported Data Sources](#supported-data-sources)
 - [Deep Q-network](#deep-q-network)
-- [Personalization](#personalization)
+- [News articles](#news-articles)
 - [Installation](#installation)
 - [Status Update](#status-update)
 - [Tutorials](#tutorials)
@@ -139,16 +139,13 @@ Technical indicators: 'macd', 'boll_ub', 'boll_lb', 'rsi_30', 'dx_30', 'close_30
 ## [Deep Q-network](https://www.nature.com/articles/s41598-024-51408-w#:~:text=Building%20upon%20the,large%2Dscale%20problems)
 Building upon the foundations of Q-learning, DQN is an extension that combines reinforcement learning with deep learning techniques15. It uses a deep neural network as an approximator to estimate the action-value function Q(s, a). DQN addresses the main challenges of traditional Q-learning, such as learning stability. Moreover, by employing deep learning, DQN can handle high-dimensional state spaces, such as those encountered in image-based tasks or large-scale problems
 
-## [Personalization](https://www.altexsoft.com/blog/reinforcement-learning-explained-overview-comparisons-and-applications-in-business/#:~:text=these%20use%20cases.-,Personalization,-News%20recommendation.)
-
+## News articles
+Returns latest news articles across stocks and crypto. By default returns latest 10 news articles.
 News recommendation. Machine learning has made it possible for businesses to personalize customer interactions at scale through the analysis of data on their preferences, background, and online behavior patterns.
 
 However, recommending such content type as online news is still a complex task. News features are dynamic by nature and become rapidly irrelevant. User preferences in topics change as well.
-
-Authors of the research paper DRN: A Deep Reinforcement Learning Framework for News Recommendation discuss three main challenges related to news recommendation methods. 
-
+A Deep Reinforcement Learning Framework for News Recommendation discuss three main challenges related to news recommendation methods. 
 We used the Deep Q-Learning based recommendation framework that considers current reward and future reward simultaneously in addition to user return as feedback.
-
 
 ## Installation
 + [Install description for all operating systems (MAC OS, Ubuntu, Windows 10)](./docs/source/start/installation.rst)
@@ -187,7 +184,7 @@ We used the Deep Q-Learning based recommendation framework that considers curren
 
 
 ## News
-  
+Returns latest news articles across stocks and crypto. By default returns latest 10 news articles.
 
 ## Citing
 [DRL based trading agents: Risk driven learning for financial rules-based policy](https://www.sciencedirect.com/journal/expert-systems-with-applications)
