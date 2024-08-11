@@ -1,9 +1,6 @@
 from __future__ import annotations
-
-
 def main():
     import warnings
-
     warnings.filterwarnings("ignore")
     import pandas as pd
     import numpy as np

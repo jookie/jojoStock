@@ -10,8 +10,7 @@
 Reinforcement learning (RL) is a machine learning technique that focuses on training an algorithm following the cut-and-try approach. The algorithm (agent) evaluates a current situation (state), takes an action, and receives feedback (reward) from the environment after each act. Positive feedback is a reward (in its usual meaning for us), and negative feedback is punishment for making a mistake.
 
 ## Deep Reinforcement Learning for Automated Stock Trading
-
-Stock trading strategies play a critical role in investment. However, it is challenging to design a profitable strategy in a complex and dynamic stock market. In this paper, we propose an ensemble strategy that employs deep reinforcement schemes to learn a stock trading strategy by maximizing investment return. We train a deep reinforcement learning agent and obtain an ensemble trading strategy using three actor-critic based algorithms: Proximal Policy Optimization (PPO), Advantage Actor Critic (A2C), and Deep Deterministic Policy Gradient (DDPG). The ensemble strategy inherits and integrates the best features of the three algorithms, thereby robustly adjusting to different market situations. In order to avoid the large memory consumption in training networks with continuous action space, we employ a load-on-demand technique for processing very large data. We test our algorithms on the 30 Dow Jones stocks that have adequate liquidity. The performance of the trading agent with different reinforcement learning algorithms is evaluated and compared with both the Dow Jones Industrial Average index and the traditional min-variance portfolio allocation strategy. The proposed deep ensemble strategy is shown to outperform the three individual algorithms and two baselines in terms of the risk-adjusted return measured by the Sharpe ratio.
+We introduce an ensemble strategy using deep reinforcement learning to maximize returns. This involves a learning agent employing three actor-critic algorithms: Proximal Policy Optimization (PPO), Advantage Actor Critic (A2C), and Deep Deterministic Policy Gradient (DDPG). This ensemble approach combines the strengths of each algorithm, adapting well to market changes. To manage memory usage when training with continuous action spaces, we use a load-on-demand data processing technique. We tested our strategy on 30 Dow Jones stocks and compared its performance to the Dow Jones Industrial Average and the traditional min-variance portfolio allocation. Our ensemble strategy outperformed individual algorithms and baselines in risk-adjusted returns, as measured by the Sharpe ratio.
 
 Keywords: Deep Reinforcement Learning, Markov Decision Process, Automated Stock Trading, Ensemble Strategy, Actor-Critic Framework
 
@@ -166,7 +165,6 @@ We used the Deep Q-Learning based recommendation framework that considers curren
 </div>
 </details>
 
-
 ## Tutorials
 
 + [Towardsdatascience] [Deep Reinforcement Learning for Automated Stock Trading](https://towardsdatascience.com/deep-reinforcement-learning-for-automated-stock-trading-f1dad0126a02)
@@ -182,9 +180,16 @@ We used the Deep Q-Learning based recommendation framework that considers curren
 |Deep reinforcement learning for automated stock trading: An ensemble strategy| ACM International Conference on AI in Finance (ICAIF) | [paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3690996) [code](https://github.com/AI4Finance-Foundation/FinRL-Meta/blob/master/tutorials/2-Advance/FinRL_Ensemble_StockTrading_ICAIF_2020/FinRL_Ensemble_StockTrading_ICAIF_2020.ipynb) | 154 | 2020 |
 |Practical deep reinforcement learning approach for stock trading | NeurIPS 2018 Workshop on Challenges and Opportunities for AI in Financial Services| [paper](https://arxiv.org/abs/1811.07522) [code](https://github.com/AI4Finance-Foundation/DQN-DDPG_Stock_Trading](https://github.com/AI4Finance-Foundation/FinRL/tree/master/examples))| 164 | 2018 |
 
-
 ## News
-Returns latest news articles across stocks and crypto. By default returns latest 10 news articles.
+Returns latest news articles across stocks and crypto. 
+By default returns latest 10 news articles.
+Example using symbol BTCUSD-BitCoin start:2024-08-04 end 2024-11-04:
+
+{
+  "news": [
+    {
+      "author": "Bibhu Pattnaik",
+      "content": "<p>Crypto analyst <strong>Kevin Svenson</strong> predicts that <strong>Bitcoin</strong> (CRYPTO: <a class=\"ticker\" href=\"https://www.benzinga.com/quote/btc/usd\">BTC</a>) could see an upsurge of up to 86%, <a href=\"https://www.benzinga.com/markets/cryptocurrency/23/12/36274982/crypto-analyst-forecasts-monumental-bitcoin-rally-by-2026\">potentially hitting the $100,000 mark</a>.</p>\n\n\n\n<p><strong>What Happened</strong>: Svenson said that Bitcoin has formed a bullish divergence pattern on the daily chart. This pattern emerges when the asset&#8217;s price is trading down or sideways, while an oscillator like the relative strength index (RSI) is in an uptrend, indicating increasing bullish momentum.</p>\n\n\n\n<p>In a video <a href=\"https://www.youtube.com/watch?v=dU_qfQRtxks\">post</a>, Svenson said, &#8220;We got actually a slightly higher low in the RSI – you could also call it flat support, horizontal support. And upon that flat support, we had lower lows in price. That is a bullish divergence.&#8221;</p>\n\n\n\n<p>He also observed a broadening pattern in the Bitcoin chart, characterized by lower highs and even lower lows, which could be interpreted as a bullish continuation pattern if the asset breaks its diagonal resistance.</p>\n\n\n\n<p>&#8220;And so what is happening on the Bitcoin chart? Well, what we see is a broadening pattern of sorts – lower highs but even lower lows,\" he added. </p>\n\n\n\n<p>Also Read: <a href=\"https://www.benzinga.com/markets/cryptocurrency/24/06/39241558/analyst-predicts-bitcoin-to-reach-groundbreaking-100-000-milestone\">Analyst Predicts Bitcoin To Reach Groundbreaking $100,000 Milestone</a></p>\n\n\n\n<p>
 
 ## Citing
 [DRL based trading agents: Risk driven learning for financial rules-based policy](https://www.sciencedirect.com/journal/expert-systems-with-applications)

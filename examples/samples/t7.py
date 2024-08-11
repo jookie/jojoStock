@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-
+# https://github.com/jookie/jojoStock/blob/fb3a1e69809d372c07c421b366e2a290e4e79976/examples/t7.py
 import datetime
 import gc
 import itertools

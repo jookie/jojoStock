@@ -13,7 +13,7 @@
 
 # git remote add origin
 git add .
-git commit -m "First commit"
+git commit -m "fix commit"
 git push -u origin main
 # Creating a New Git Repository on a Hosting Service (e.g., GitHub, GitLab):
 # 1. Create a Repository on the Hosting Service:
