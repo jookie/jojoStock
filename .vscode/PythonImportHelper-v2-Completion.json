@@ -6282,7 +6282,7 @@
         "kind": 2,
         "importPath": "examples.jojoTrainer.t6",
         "description": "examples.jojoTrainer.t6",
-        "peekOfCode": "def main():\n  API_KEY = \"PKA2OY3YK7Y4M6Q7LCLR\"\n  API_SECRET = \"BxT64PIQtDBb*tnW\"\n  API_BASE_URL = 'https://paper-api.alpaca.markets'\n  import warnings\n  # %matplotlib inline\n  from finrl.meta.preprocessor.yahoodownloader import YahooDownloader\n  from finrl.meta.preprocessor.preprocessors import FeatureEngineer, data_split\n  from finrl.meta.env_stock_trading.env_stocktrading import StockTradingEnv\n  from finrl.agents.stablebaselines3.models import DRLAgent",
+        "peekOfCode": "def main():\n  API_KEY = \"PKA2OY3YK7Y4M6Q7LCLR\"\n  API_SECRET = \"BxT64PIQtDBb*tnW\"\n  API_BASE_URL = 'https://paper-api.alpaca.markets'\n  import warnings\n  warnings.filterwarnings(\"ignore\")\n  import os\n  import time\n  import gym\n  import torch",
         "detail": "examples.jojoTrainer.t6",
         "documentation": {}
     },

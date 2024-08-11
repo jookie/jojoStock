@@ -5,41 +5,32 @@ def main():
   API_BASE_URL = 'https://paper-api.alpaca.markets'
 
   import warnings
-  # %matplotlib inline
+  warnings.filterwarnings("ignore")
+  import os
+  import time
+  import gym
+  import torch
+  import numpy.random as rd
   from finrl.meta.preprocessor.yahoodownloader import YahooDownloader
   from finrl.meta.preprocessor.preprocessors import FeatureEngineer, data_split
   from finrl.meta.env_stock_trading.env_stocktrading import StockTradingEnv
   from finrl.agents.stablebaselines3.models import DRLAgent
   from stable_baselines3.common.logger import configure
   from finrl.meta.data_processor import DataProcessor
-
   from finrl.plot import backtest_stats, backtest_plot, get_daily_return, get_baseline
   from pprint import pprint
-
-  warnings.filterwarnings("ignore")
-
   import sys
   sys.path.append("../FinRL")
-
   import itertools
-
-  import os
-  import time
-  import gym
-  import numpy.random as rd
-  import torch
   import torch.nn as nn
   from copy import deepcopy
   from torch import Tensor
   from torch.distributions.normal import Normal
-
   import pandas as pd
   import numpy as np
-  import matplotlib
   import matplotlib.pyplot as plt
   # matplotlib.use('Agg')
   import datetime
-
   from finrl import config
   from finrl import config_tickers
   import os
@@ -75,7 +66,7 @@ def main():
                       end_date = TRADE_END_DATE,
                       ticker_list = config_tickers.DOW_30_TICKER).fetch_data()
 
-  # print(config_tickers.DOW_30_TICKER)
+  print(config_tickers.DOW_30_TICKER)
 
   df.shape
 
