@@ -63,3 +63,16 @@ To collapse a cell in a Jupyter Notebook, you can follow these steps:
 
 rm -rf .git
 git init
+
+
+
+
+
+<div align="left">
+   <a href="https://www.facebook.com/watch?v=837476216740094" target="_blank">
+        <img src="jojo/img/386622_facebook_icon.png" alt="Facebook Button" style="width: 20px; height: 20px;">
+  </a>
+     <a href="https://www.facebook.com/watch?v=837476216740094" target="_blank">
+        <img src="jojo/img/386622_facebook_icon.png" alt="Facebook Button" style="width: 20px; height: 20px;">
+  </a>
+</div>

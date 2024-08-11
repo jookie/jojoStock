@@ -1,85 +1,73 @@
-<div align="center">
-<img align="center" width="30%" alt="image" src="https://github.com/AI4Finance-Foundation/FinGPT/assets/31713746/e0371951-1ce1-488e-aa25-0992dafcc139">
+<img align="left" src=jojo/StateReward.webp width="55%"/>
+<div >
+ 
+  <h1 align="right">
+    InfoSoft Finance
+  </h1>
 </div>
+<div align="left">
 
-# FinRL: Financial Reinforcement Learning [![twitter][1.1]][1] [![facebook][1.2]][2] [![google+][1.3]][3] [![linkedin][1.4]][4]
+Reinforcement learning (RL) is a machine learning technique that focuses on training an algorithm following the cut-and-try approach. The algorithm (agent) evaluates a current situation (state), takes an action, and receives feedback (reward) from the environment after each act. Positive feedback is a reward (in its usual meaning for us), and negative feedback is punishment for making a mistake.
 
-[1.1]: http://www.tensorlet.org/wp-content/uploads/2021/01/button_twitter_22x22.png
-[1.2]: http://www.tensorlet.org/wp-content/uploads/2021/01/facebook-button_22x22.png
-[1.3]: http://www.tensorlet.org/wp-content/uploads/2021/01/button_google_22.xx_.png
-[1.4]: http://www.tensorlet.org/wp-content/uploads/2021/01/button_linkedin_22x22.png
+## Deep Reinforcement Learning for Automated Stock Trading
 
-[1]: https://twitter.com/intent/tweet?text=FinRL-Financial-Deep-Reinforcement-Learning%20&url=https://github.com/AI4Finance-Foundation/FinRL&hashtags=DRL&hashtags=AI
-[2]: https://www.facebook.com/sharer.php?u=http%3A%2F%2Fgithub.com%2FAI4Finance-Foundation%2FFinRL
-[3]: https://plus.google.com/share?url=https://github.com/AI4Finance-Foundation/FinRL
-[4]: https://www.linkedin.com/sharing/share-offsite/?url=http%3A%2F%2Fgithub.com%2FAI4Finance-Foundation%2FFinRL
+Stock trading strategies play a critical role in investment. However, it is challenging to design a profitable strategy in a complex and dynamic stock market. In this paper, we propose an ensemble strategy that employs deep reinforcement schemes to learn a stock trading strategy by maximizing investment return. We train a deep reinforcement learning agent and obtain an ensemble trading strategy using three actor-critic based algorithms: Proximal Policy Optimization (PPO), Advantage Actor Critic (A2C), and Deep Deterministic Policy Gradient (DDPG). The ensemble strategy inherits and integrates the best features of the three algorithms, thereby robustly adjusting to different market situations. In order to avoid the large memory consumption in training networks with continuous action space, we employ a load-on-demand technique for processing very large data. We test our algorithms on the 30 Dow Jones stocks that have adequate liquidity. The performance of the trading agent with different reinforcement learning algorithms is evaluated and compared with both the Dow Jones Industrial Average index and the traditional min-variance portfolio allocation strategy. The proposed deep ensemble strategy is shown to outperform the three individual algorithms and two baselines in terms of the risk-adjusted return measured by the Sharpe ratio.
 
-<div align="center">
-<img align="center" src=figs/logo_transparent_background.png width="55%"/>
-</div>
-
-[![Downloads](https://static.pepy.tech/badge/finrl)](https://pepy.tech/project/finrl)
-[![Downloads](https://static.pepy.tech/badge/finrl/week)](https://pepy.tech/project/finrl)
-[![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
-[![PyPI](https://img.shields.io/pypi/v/finrl.svg)](https://pypi.org/project/finrl/)
-[![Documentation Status](https://readthedocs.org/projects/finrl/badge/?version=latest)](https://finrl.readthedocs.io/en/latest/?badge=latest)
-![License](https://img.shields.io/github/license/AI4Finance-Foundation/finrl.svg?color=brightgreen)
-![](https://img.shields.io/github/issues-raw/AI4Finance-Foundation/finrl?label=Issues)
-![](https://img.shields.io/github/issues-closed-raw/AI4Finance-Foundation/finrl?label=Closed+Issues)
-![](https://img.shields.io/github/issues-pr-raw/AI4Finance-Foundation/finrl?label=Open+PRs)
-![](https://img.shields.io/github/issues-pr-closed-raw/AI4Finance-Foundation/finrl?label=Closed+PRs)
-
-[FinGPT](https://github.com/AI4Finance-Foundation/ChatGPT-for-FinTech): Open-source for open-finance! Revolutionize FinTech.
-
-Check out our latest competition: [ACM ICAIF 2023 FinRL Contest](https://finrl-contest.github.io/)
-
-
-[![](https://dcbadge.vercel.app/api/server/trsr8SXpW5)](https://discord.gg/trsr8SXpW5)
-
-![Visitors](https://api.visitorbadge.io/api/VisitorHit?user=AI4Finance-Foundation&repo=FinRL&countColor=%23B17A)
-
-
-
-**Financial reinforcement learning (FinRL)** ([Document website](https://finrl.readthedocs.io/en/latest/index.html)) is **the first open-source framework** for financial reinforcement learning. FinRL has evolved into an **ecosystem**
-
-| Dev Roadmap  | Stage | Users | Project | Desription |
-|----|----|----|----|----|
-| 0.0 (Preparation) | entrance | practitioners | [FinRL-Meta](https://github.com/AI4Finance-Foundation/FinRL-Meta)| gym-style market environments |
-| 1.0 (Proof-of-Concept)| full-stack | developers | [this repo](https://github.com/AI4Finance-Foundation/FinRL) | automatic pipeline |
-| 2.0 (Professional) | profession | experts | [ElegantRL](https://github.com/AI4Finance-Foundation/ElegantRL) | algorithms |
-| 3.0 (Production) | service | hedge funds | [Podracer](https://github.com/AI4Finance-Foundation/FinRL_Podracer) | cloud-native deployment |
-
+Keywords: Deep Reinforcement Learning, Markov Decision Process, Automated Stock Trading, Ensemble Strategy, Actor-Critic Framework
 
 ## Outline
 
-  - [Overview](#overview)
-  - [File Structure](#file-structure)
-  - [Supported Data Sources](#supported-data-sources)
-  - [Installation](#installation)
-  - [Status Update](#status-update)
-  - [Tutorials](#tutorials)
-  - [Publications](#publications)
-  - [News](#news)
-  - [Citing FinRL](#citing-finrl)
-  - [Join and Contribute](#join-and-contribute)
-    - [Contributors](#contributors)
-    - [Sponsorship](#sponsorship)
-  - [LICENSE](#license)
-
+- [Deep Reinforcement Learning for Automated Stock Trading](#deep-reinforcement-learning-for-automated-stock-trading)
+- [Outline](#outline)
+- [Overview](#overview)
+- [Reinforcement, supervised, and unsupervised learning](#reinforcement-supervised-and-unsupervised-learning)
+- [Multi-level deep Q-networks for Bitcoin trading strategies](#multi-level-deep-q-networks-for-bitcoin-trading-strategies)
+- [File Structure](#file-structure)
+- [Supported Data Sources](#supported-data-sources)
+- [Deep Q-network](#deep-q-network)
+- [Personalization](#personalization)
+- [Installation](#installation)
+- [Status Update](#status-update)
+- [Tutorials](#tutorials)
+- [Publications](#publications)
+- [News](#news)
+- [Citing](#citing)
+- [Join and Contribute](#join-and-contribute)
+  - [Contributors](#contributors)
+- [LICENSE](#license)
 ## Overview
 
-FinRL has three layers: market environments, agents, and applications.  For a trading task (on the top), an agent (in the middle) interacts with a market environment (at the bottom), making sequential decisions.
+Jojo has three layers: market environments, agents, and applications.  For a trading task (on the top), an agent (in the middle) interacts with a market environment (at the bottom), making sequential decisions.
+
+## Reinforcement, supervised, and unsupervised learning
 
 <div align="center">
 <img align="center" src=figs/finrl_framework.png>
 </div>
 
-A quick start: Stock_NeurIPS2018.ipynb. Videos [FinRL](http://www.youtube.com/watch?v=ZSGJjtM-5jA) at [AI4Finance Youtube Channel](https://www.youtube.com/channel/UCrVri6k3KPBa3NhapVV4K5g).
+In supervised learning, an agent “knows” what task to perform and which set of actions is correct. Data scientists train the agent on historical data with target variables (desired answers with predictive analysis) AKA labeled data. The agent receives direct feedback. As a result of training, an agent can forecast whether there will be target variables in new data or not. Supervised learning allows for solving classification and regression tasks.
+
+Reinforcement learning doesn’t rely on labeled datasets: The agent isn’t told which actions to take or the optimal way of performing a task. RL uses rewards and penalties instead of labels associated with each decision in datasets to signal whether a taken action is good or bad. So, the agent only gets feedback once it completes the task. That’s how time-delayed feedback and the trial-and-error principle differentiate reinforcement learning from supervised learning.
+
+Since one of the goals of RL is to find a set of consecutive actions that maximize a reward, sequential decision making is another significant difference between these algorithm training styles. Each agent’s decision can affect its future actions.
+
+Reinforcement learning vs unsupervised learning. In unsupervised learning, the algorithm analyzes unlabeled data to find hidden interconnections between data points and structures them by similarities or differences. RL aims at defining the best action model to get the biggest long-term reward, differentiating it from unsupervised learning in terms of the key goal.
+
+Reinforcement and deep learning. Most of reinforcement learning implementations employ deep learning models. They involve the use of deep neural networks as the core method for agent training. Unlike other machine learning methods, deep learning fits best for recognizing complex patterns in images, sounds, and texts. Additionally, neural networks allow data scientists to fit all processes into a single model without breaking down the agent’s architecture into multiple modules.
+
+## Multi-level deep Q-networks for Bitcoin trading strategies
+
+We propose a multi-level deep Q-network (M-DQN) that leverages historical Bitcoin price data and Twitter sentiment analysis. In addition, an innovative preprocessing pipeline is introduced to extract valuable insights from the data, which are then input into the M-DQN model. In the experiments, this integration led to a noteworthy increase in investment value from the initial amount and a Sharpe Ratio in excess of 2.7 in measuring risk-adjusted return.
+
+Reinforcement learning is applicable in numerous industries, including internet advertising and eCommerce, finance, robotics, and manufacturing. Let’s take a closer look at these use cases.
 
 
+
+<div>
 ## File Structure
 
 The main folder **finrl** has three subfolders **applications, agents, meta**. We employ a **train-test-trade** pipeline with three files: train.py, test.py, and trade.py.
+</div>
 
 ```
 FinRL
@@ -144,46 +132,22 @@ FinRL
 |[YahooFinance](https://pypi.org/project/yfinance/)| US Securities| Frequency-specific, 1min| 2,000/hour| OHLCV | Prices&Indicators|
 
 
-<!-- |Data Source |Type |Max Frequency |Raw Data|Preprocessed Data|
-|  ----  |  ----  |  ----  |  ----  |  ----  |
-|    AkShare |  CN Securities | 1 day  |  OHLCV |  Prices, indicators |
-|    Alpaca |  US Stocks, ETFs |  1 min |  OHLCV |  Prices, indicators |
-|    Alpha Vantage | Stock, ETF, forex, crypto, technical indicators | 1 min |  OHLCV  & Prices, indicators |
-|    Baostock |  CN Securities |  5 min |  OHLCV |  Prices, indicators |
-|    Binance |  Cryptocurrency |  1 s |  OHLCV |  Prices, indicators |
-|    CCXT |  Cryptocurrency |  1 min  |  OHLCV |  Prices, indicators |
-|    currencyapi |  Exchange rate | 1 day |  Exchange rate | Exchange rate, indicators |
-|    currencylayer |  Exchange rate | 1 day  |  Exchange rate | Exchange rate, indicators |
-|    EOD Historical Data | US stocks, and ETFs |  1 day  |  OHLCV  | Prices, indicators |
-|    Exchangerates |  Exchange rate |  1 day  |  Exchange rate | Exchange rate, indicators |
-|    findatapy |  CN Securities | 1 day  |  OHLCV |  Prices, indicators |
-|    Financial Modeling prep | US stocks, currencies, crypto |  1 min |  OHLCV  | Prices, indicators |
-|    finnhub | US Stocks, currencies, crypto |   1 day |  OHLCV  | Prices, indicators |
-|    Fixer |  Exchange rate |  1 day  |  Exchange rate | Exchange rate, indicators |
-|    IEXCloud |  NMS US securities | 1 day  | OHLCV |  Prices, indicators |
-|    JoinQuant |  CN Securities |  1 min  |  OHLCV |  Prices, indicators |
-|    Marketstack | 50+ countries |  1 day  |  OHLCV | Prices, indicators |
-|    Open Exchange Rates |  Exchange rate |  1 day  |  Exchange rate | Exchange rate, indicators |
-|    pandas\_datareader |  US Securities |  1 day |  OHLCV | Prices, indicators |
-|    pandas-finance |  US Securities |  1 day  |  OHLCV  & Prices, indicators |
-|    Polygon |  US Securities |  1 day  |  OHLCV  | Prices, indicators |
-|    Quandl | 250+ sources |  1 day  |  OHLCV  | Prices, indicators |
-|    QuantConnect |  US Securities |  1 s |  OHLCV |  Prices, indicators |
-|    RiceQuant |  CN Securities |  1 ms  |  OHLCV |  Prices, indicators |
-|    Sinopac   | Taiwan securities | 1min | OHLCV |  Prices, indicators |
-|    Tiingo | Stocks, crypto |  1 day  |  OHLCV  | Prices, indicators |
-|    Tushare |  CN Securities | 1 min  |  OHLCV |  Prices, indicators |
-|    WRDS |  US Securities |  1 ms  |  Intraday Trades | Prices, indicators |
-|    XE |  Exchange rate |  1 day  |  Exchange rate | Exchange rate, indicators |
-|    Xignite |  Exchange rate |  1 day  |  Exchange rate | Exchange rate, indicators |
-|    YahooFinance |  US Securities | 1 min  |  OHLCV  |  Prices, indicators |
-|    ystockquote |  US Securities |  1 day  |  OHLCV | Prices, indicators | -->
-
-
-
 OHLCV: open, high, low, and close prices; volume. adjusted_close: adjusted close price
 
 Technical indicators: 'macd', 'boll_ub', 'boll_lb', 'rsi_30', 'dx_30', 'close_30_sma', 'close_60_sma'. Users also can add new features.
+
+## [Deep Q-network](https://www.nature.com/articles/s41598-024-51408-w#:~:text=Building%20upon%20the,large%2Dscale%20problems)
+Building upon the foundations of Q-learning, DQN is an extension that combines reinforcement learning with deep learning techniques15. It uses a deep neural network as an approximator to estimate the action-value function Q(s, a). DQN addresses the main challenges of traditional Q-learning, such as learning stability. Moreover, by employing deep learning, DQN can handle high-dimensional state spaces, such as those encountered in image-based tasks or large-scale problems
+
+## [Personalization](https://www.altexsoft.com/blog/reinforcement-learning-explained-overview-comparisons-and-applications-in-business/#:~:text=these%20use%20cases.-,Personalization,-News%20recommendation.)
+
+News recommendation. Machine learning has made it possible for businesses to personalize customer interactions at scale through the analysis of data on their preferences, background, and online behavior patterns.
+
+However, recommending such content type as online news is still a complex task. News features are dynamic by nature and become rapidly irrelevant. User preferences in topics change as well.
+
+Authors of the research paper DRN: A Deep Reinforcement Learning Framework for News Recommendation discuss three main challenges related to news recommendation methods. 
+
+We used the Deep Q-Learning based recommendation framework that considers current reward and future reward simultaneously in addition to user return as feedback.
 
 
 ## Installation
@@ -210,9 +174,6 @@ Technical indicators: 'macd', 'boll_ub', 'boll_lb', 'rsi_30', 'dx_30', 'close_30
 
 + [Towardsdatascience] [Deep Reinforcement Learning for Automated Stock Trading](https://towardsdatascience.com/deep-reinforcement-learning-for-automated-stock-trading-f1dad0126a02)
 
-A complete list at [blogs](https://github.com/AI4Finance-Foundation/Blogs)
-
-
 ## Publications
 
 |Title |Conference/Journal |Link|Citations|Year|
@@ -226,90 +187,20 @@ A complete list at [blogs](https://github.com/AI4Finance-Foundation/Blogs)
 
 
 ## News
-+ [央广网] [2021 IDEA大会于福田圆满落幕：群英荟萃论道AI 多项目发布亮点纷呈](http://tech.cnr.cn/techph/20211123/t20211123_525669092.shtml)
-+ [央广网] [2021 IDEA大会开启AI思想盛宴 沈向洋理事长发布六大前沿产品](https://baijiahao.baidu.com/s?id=1717101783873523790&wfr=spider&for=pc)
-+ [IDEA新闻] [2021 IDEA大会发布产品FinRL-Meta——基于数据驱动的强化学习金融风险模拟系统](https://idea.edu.cn/news/20211213143128.html)
-+ [知乎] [FinRL-Meta基于数据驱动的强化学习金融元宇宙](https://zhuanlan.zhihu.com/p/437804814)
-+ [量化投资与机器学习] [基于深度强化学习的股票交易策略框架（代码+文档)](https://www.mdeditor.tw/pl/p5Gg)
-+ [运筹OR帷幄] [领读计划NO.10 | 基于深度增强学习的量化交易机器人：从AlphaGo到FinRL的演变过程](https://zhuanlan.zhihu.com/p/353557417)
-+ [深度强化实验室] [【重磅推荐】哥大开源“FinRL”: 一个用于量化金融自动交易的深度强化学习库](https://blog.csdn.net/deeprl/article/details/114828024)
-+ [商业新知] [金融科技讲座回顾|AI4Finance: 从AlphaGo到FinRL](https://www.shangyexinzhi.com/article/4170766.html)
-+ [Kaggle] [Jane Street Market Prediction](https://www.kaggle.com/c/jane-street-market-prediction/discussion/199313)
-+ [矩池云Matpool] [在矩池云上如何运行FinRL股票交易策略框架](http://www.python88.com/topic/111918)
-+ [财智无界] [金融学会常务理事陈学彬: 深度强化学习在金融资产管理中的应用](https://www.sohu.com/a/486837028_120929319)
-+ [Neurohive] [FinRL: глубокое обучение с подкреплением для трейдинга](https://neurohive.io/ru/gotovye-prilozhenija/finrl-glubokoe-obuchenie-s-podkrepleniem-dlya-trejdinga/)
-+ [ICHI.PRO] [양적 금융을위한 FinRL: 단일 주식 거래를위한 튜토리얼](https://ichi.pro/ko/yangjeog-geum-yung-eul-wihan-finrl-dan-il-jusig-geolaeleul-wihan-tyutolieol-61395882412716)
-+ [知乎] [基于深度强化学习的金融交易策略（FinRL+Stable baselines3，以道琼斯30股票为例）](https://zhuanlan.zhihu.com/p/563238735)
-+ [知乎] [动态数据驱动的金融强化学习](https://zhuanlan.zhihu.com/p/616799055)
-+ [知乎] [FinRL的W&B化+超参数搜索和模型优化(基于Stable Baselines 3）](https://zhuanlan.zhihu.com/p/498115373)
-+ [知乎] [FinRL-Meta: 未来金融强化学习的元宇宙](https://zhuanlan.zhihu.com/p/544621882)
-+
-## Citing FinRL
+  
 
-```
-@article{dynamic_datasets,
-    author = {Liu, Xiao-Yang and Xia, Ziyi and Yang, Hongyang and Gao, Jiechao and Zha, Daochen and Zhu, Ming and Wang, Christina Dan and Wang, Zhaoran and Guo, Jian},
-    title = {Dynamic Datasets and Market Environments for Financial Reinforcement Learning},
-    journal = {Machine Learning - Springer Nature},
-    year = {2024}
-}
-```
+## Citing
+[DRL based trading agents: Risk driven learning for financial rules-based policy](https://www.sciencedirect.com/journal/expert-systems-with-applications)
 
-
-```
-@article{liu2022finrl_meta,
-  title={FinRL-Meta: Market Environments and Benchmarks for Data-Driven Financial Reinforcement Learning},
-  author={Liu, Xiao-Yang and Xia, Ziyi and Rui, Jingyang and Gao, Jiechao and Yang, Hongyang and Zhu, Ming and Wang, Christina Dan and Wang, Zhaoran and Guo, Jian},
-  journal={NeurIPS},
-  year={2022}
-}
-```
-
-```
-@article{liu2021finrl,
-    author  = {Liu, Xiao-Yang and Yang, Hongyang and Gao, Jiechao and Wang, Christina Dan},
-    title   = {{FinRL}: Deep reinforcement learning framework to automate trading in quantitative finance},
-    journal = {ACM International Conference on AI in Finance (ICAIF)},
-    year    = {2021}
-}
-
-```
-
-```
-@article{finrl2020,
-    author  = {Liu, Xiao-Yang and Yang, Hongyang and Chen, Qian and Zhang, Runjia and Yang, Liuqing and Xiao, Bowen and Wang, Christina Dan},
-    title   = {{FinRL}: A deep reinforcement learning library for automated stock trading in quantitative finance},
-    journal = {Deep RL Workshop, NeurIPS 2020},
-    year    = {2020}
-}
-```
-
-```
-@article{liu2018practical,
-  title={Practical deep reinforcement learning approach for stock trading},
-  author={Liu, Xiao-Yang and Xiong, Zhuoran and Zhong, Shan and Yang, Hongyang and Walid, Anwar},
-  journal={NeurIPS Workshop on Deep Reinforcement Learning},
-  year={2018}
-}
-```
-
-We published [FinRL papers](http://tensorlet.org/projects/ai-in-finance/) that are listed at [Google Scholar](https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=XsdPXocAAAAJ). Previous papers are given in the [list](https://github.com/AI4Finance-Foundation/FinRL/blob/master/tutorials/FinRL_papers.md).
-
+[A General Portfolio Optimization Environment](https://sol.sbc.org.br/index.php/bwaif/article/view/24959/24780)
 
 ## Join and Contribute
 
-Welcome to **AI4Finance** community!
-
-Please check [Contributing Guidances](https://github.com/AI4Finance-Foundation/FinRL-Tutorials/blob/master/Contributing.md).
+Welcome to **JojoFinance** community!
 
 ### Contributors
 
 Thank you!
-
-<a href="https://github.com/AI4Finance-LLC/FinRL-Library/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=AI4Finance-LLC/FinRL-Library" />
-</a>
-
 
 ## LICENSE
 
