@@ -1,6 +1,6 @@
 from __future__ import annotations
 def main():
-  API_KEY = "PKA2OY3YK7Y4M6Q7LCLR"
+  API_KEY = "PKVD6WOSPEMKS0UI6A3K"
   API_SECRET = "BxT64PIQtDBb*tnW"
   API_BASE_URL = 'https://paper-api.alpaca.markets'
 
@@ -65,7 +65,6 @@ def main():
   df = YahooDownloader(start_date = TRAIN_START_DATE,
                       end_date = TRADE_END_DATE,
                       ticker_list = config_tickers.DOW_30_TICKER).fetch_data()
-
   print(config_tickers.DOW_30_TICKER)
 
   df.shape
