@@ -4127,6 +4127,14 @@
         "documentation": {}
     },
     {
+        "label": "OrderType",
+        "importPath": "alpaca.trading.enums",
+        "description": "alpaca.trading.enums",
+        "isExtraImport": true,
+        "detail": "alpaca.trading.enums",
+        "documentation": {}
+    },
+    {
         "label": "PaperTradingAlpaca",
         "importPath": "finrl.meta.paper_trading.alpaca",
         "description": "finrl.meta.paper_trading.alpaca",
@@ -6562,7 +6570,7 @@
         "kind": 5,
         "importPath": "examples.jojoTradingBot.trade_bot",
         "description": "examples.jojoTradingBot.trade_bot",
-        "peekOfCode": "API_KEY = \"PKEJH4W0URAU56SHKQW3\"\nAPI_SECRET = \"9g6xpk2x2RiBeV5Cy48WdpxCU51chZx91Lj8x6Ow\"\nAPI_BASE_URL = 'https://paper-api.alpaca.markets'\n# %matplotlib inline\nfrom finrl.config_tickers import DOW_30_TICKER\nfrom finrl.meta.preprocessor.yahoodownloader import YahooDownloader\nfrom finrl.meta.preprocessor.preprocessors import FeatureEngineer, data_split\nfrom finrl.meta.env_stock_trading.env_stocktrading import StockTradingEnv\nfrom finrl.agents.stablebaselines3.models import DRLAgent,DRLEnsembleAgent\nfrom finrl.plot import backtest_stats, backtest_plot, get_daily_return, get_baseline",
+        "peekOfCode": "API_KEY = \"PKEJH4W0URAU56SHKQW3\"\nAPI_SECRET = \"9g6xpk2x2RiBeV5Cy48WdpxCU51chZx91Lj8x6Ow\"\nAPI_BASE_URL = 'https://paper-api.alpaca.markets'\nfrom finrl.config_tickers import DOW_30_TICKER\nfrom finrl.meta.preprocessor.yahoodownloader import YahooDownloader\nfrom finrl.meta.preprocessor.preprocessors import FeatureEngineer, data_split\nfrom finrl.meta.env_stock_trading.env_stocktrading import StockTradingEnv\nfrom finrl.agents.stablebaselines3.models import DRLAgent,DRLEnsembleAgent\nfrom finrl.plot import backtest_stats, backtest_plot, get_daily_return, get_baseline\nfrom pprint import pprint",
         "detail": "examples.jojoTradingBot.trade_bot",
         "documentation": {}
     },
@@ -6571,7 +6579,7 @@
         "kind": 5,
         "importPath": "examples.jojoTradingBot.trade_bot",
         "description": "examples.jojoTradingBot.trade_bot",
-        "peekOfCode": "API_SECRET = \"9g6xpk2x2RiBeV5Cy48WdpxCU51chZx91Lj8x6Ow\"\nAPI_BASE_URL = 'https://paper-api.alpaca.markets'\n# %matplotlib inline\nfrom finrl.config_tickers import DOW_30_TICKER\nfrom finrl.meta.preprocessor.yahoodownloader import YahooDownloader\nfrom finrl.meta.preprocessor.preprocessors import FeatureEngineer, data_split\nfrom finrl.meta.env_stock_trading.env_stocktrading import StockTradingEnv\nfrom finrl.agents.stablebaselines3.models import DRLAgent,DRLEnsembleAgent\nfrom finrl.plot import backtest_stats, backtest_plot, get_daily_return, get_baseline\nfrom pprint import pprint",
+        "peekOfCode": "API_SECRET = \"9g6xpk2x2RiBeV5Cy48WdpxCU51chZx91Lj8x6Ow\"\nAPI_BASE_URL = 'https://paper-api.alpaca.markets'\nfrom finrl.config_tickers import DOW_30_TICKER\nfrom finrl.meta.preprocessor.yahoodownloader import YahooDownloader\nfrom finrl.meta.preprocessor.preprocessors import FeatureEngineer, data_split\nfrom finrl.meta.env_stock_trading.env_stocktrading import StockTradingEnv\nfrom finrl.agents.stablebaselines3.models import DRLAgent,DRLEnsembleAgent\nfrom finrl.plot import backtest_stats, backtest_plot, get_daily_return, get_baseline\nfrom pprint import pprint\nimport sys",
         "detail": "examples.jojoTradingBot.trade_bot",
         "documentation": {}
     },
@@ -6580,7 +6588,7 @@
         "kind": 5,
         "importPath": "examples.jojoTradingBot.trade_bot",
         "description": "examples.jojoTradingBot.trade_bot",
-        "peekOfCode": "API_BASE_URL = 'https://paper-api.alpaca.markets'\n# %matplotlib inline\nfrom finrl.config_tickers import DOW_30_TICKER\nfrom finrl.meta.preprocessor.yahoodownloader import YahooDownloader\nfrom finrl.meta.preprocessor.preprocessors import FeatureEngineer, data_split\nfrom finrl.meta.env_stock_trading.env_stocktrading import StockTradingEnv\nfrom finrl.agents.stablebaselines3.models import DRLAgent,DRLEnsembleAgent\nfrom finrl.plot import backtest_stats, backtest_plot, get_daily_return, get_baseline\nfrom pprint import pprint\nimport sys",
+        "peekOfCode": "API_BASE_URL = 'https://paper-api.alpaca.markets'\nfrom finrl.config_tickers import DOW_30_TICKER\nfrom finrl.meta.preprocessor.yahoodownloader import YahooDownloader\nfrom finrl.meta.preprocessor.preprocessors import FeatureEngineer, data_split\nfrom finrl.meta.env_stock_trading.env_stocktrading import StockTradingEnv\nfrom finrl.agents.stablebaselines3.models import DRLAgent,DRLEnsembleAgent\nfrom finrl.plot import backtest_stats, backtest_plot, get_daily_return, get_baseline\nfrom pprint import pprint\nimport sys\nsys.path.append(\"../FinRL-Library\")",
         "detail": "examples.jojoTradingBot.trade_bot",
         "documentation": {}
     },

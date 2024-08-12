@@ -8,7 +8,6 @@ import datetime
 API_KEY = "PKEJH4W0URAU56SHKQW3"
 API_SECRET = "9g6xpk2x2RiBeV5Cy48WdpxCU51chZx91Lj8x6Ow"
 API_BASE_URL = 'https://paper-api.alpaca.markets'
-# %matplotlib inline
 from finrl.config_tickers import DOW_30_TICKER
 from finrl.meta.preprocessor.yahoodownloader import YahooDownloader
 from finrl.meta.preprocessor.preprocessors import FeatureEngineer, data_split
@@ -194,7 +193,7 @@ from alpaca.data.timeframe import TimeFrame
 from alpaca.data.live import StockDataStream
 from alpaca.trading.client import TradingClient
 from alpaca.trading.requests import MarketOrderRequest
-from alpaca.trading.enums import OrderSide, TimeInForce
+from alpaca.trading.enums import OrderSide, TimeInForce, OrderType
 from alpaca.trading.requests import LimitOrderRequest
 import alpaca_trade_api as tradeapi
 
@@ -210,7 +209,7 @@ try:
             qty=qty,
             side=OrderSide.BUY,
             time_in_force=TimeInForce.DAY,
-            type='market')
+            type= OrderType.MARKET)
         print(f"Buy order submitted: {buy_order}")
     else:
         print('no trades for today')
