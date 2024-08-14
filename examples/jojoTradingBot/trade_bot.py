@@ -34,8 +34,6 @@ from finrl.config import (
     TRAIN_END_DATE,
     TEST_START_DATE,
     TEST_END_DATE,
-    TRADE_START_DATE,
-    TRADE_END_DATE,
 )
 
 check_and_make_directories([DATA_SAVE_DIR, TRAINED_MODEL_DIR, TENSORBOARD_LOG_DIR, RESULTS_DIR])
@@ -186,15 +184,7 @@ backtest_plot(df_account_value,
               baseline_start = df_account_value.loc[0,'date'],
               baseline_end = df_account_value.loc[len(df_account_value)-1,'date'])
 
-
-from alpaca.data.historical import CryptoHistoricalDataClient
-from alpaca.data.requests import CryptoBarsRequest
-from alpaca.data.timeframe import TimeFrame
-from alpaca.data.live import StockDataStream
-from alpaca.trading.client import TradingClient
-from alpaca.trading.requests import MarketOrderRequest
 from alpaca.trading.enums import OrderSide, TimeInForce, OrderType
-from alpaca.trading.requests import LimitOrderRequest
 import alpaca_trade_api as tradeapi
 
 api = tradeapi.REST(API_KEY, API_SECRET, API_BASE_URL, api_version='v2')

@@ -1300,6 +1300,14 @@
         "documentation": {}
     },
     {
+        "label": "PPO",
+        "importPath": "stable_baselines3",
+        "description": "stable_baselines3",
+        "isExtraImport": true,
+        "detail": "stable_baselines3",
+        "documentation": {}
+    },
+    {
         "label": "BaseCallback",
         "importPath": "stable_baselines3.common.callbacks",
         "description": "stable_baselines3.common.callbacks",
@@ -2649,22 +2657,6 @@
     },
     {
         "label": "TEST_END_DATE",
-        "importPath": "finrl.config",
-        "description": "finrl.config",
-        "isExtraImport": true,
-        "detail": "finrl.config",
-        "documentation": {}
-    },
-    {
-        "label": "TRADE_START_DATE",
-        "importPath": "finrl.config",
-        "description": "finrl.config",
-        "isExtraImport": true,
-        "detail": "finrl.config",
-        "documentation": {}
-    },
-    {
-        "label": "TRADE_END_DATE",
         "importPath": "finrl.config",
         "description": "finrl.config",
         "isExtraImport": true,
@@ -4029,11 +4021,35 @@
         "documentation": {}
     },
     {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
         "label": "jsonify",
         "importPath": "flask",
         "description": "flask",
         "isExtraImport": true,
         "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "APScheduler",
+        "importPath": "flask_apscheduler",
+        "description": "flask_apscheduler",
+        "isExtraImport": true,
+        "detail": "flask_apscheduler",
+        "documentation": {}
+    },
+    {
+        "label": "run_drl_task",
+        "importPath": "drl_task",
+        "description": "drl_task",
+        "isExtraImport": true,
+        "detail": "drl_task",
         "documentation": {}
     },
     {
@@ -4052,62 +4068,6 @@
         "importPath": "warnings",
         "description": "warnings",
         "detail": "warnings",
-        "documentation": {}
-    },
-    {
-        "label": "CryptoHistoricalDataClient",
-        "importPath": "alpaca.data.historical",
-        "description": "alpaca.data.historical",
-        "isExtraImport": true,
-        "detail": "alpaca.data.historical",
-        "documentation": {}
-    },
-    {
-        "label": "CryptoBarsRequest",
-        "importPath": "alpaca.data.requests",
-        "description": "alpaca.data.requests",
-        "isExtraImport": true,
-        "detail": "alpaca.data.requests",
-        "documentation": {}
-    },
-    {
-        "label": "TimeFrame",
-        "importPath": "alpaca.data.timeframe",
-        "description": "alpaca.data.timeframe",
-        "isExtraImport": true,
-        "detail": "alpaca.data.timeframe",
-        "documentation": {}
-    },
-    {
-        "label": "StockDataStream",
-        "importPath": "alpaca.data.live",
-        "description": "alpaca.data.live",
-        "isExtraImport": true,
-        "detail": "alpaca.data.live",
-        "documentation": {}
-    },
-    {
-        "label": "TradingClient",
-        "importPath": "alpaca.trading.client",
-        "description": "alpaca.trading.client",
-        "isExtraImport": true,
-        "detail": "alpaca.trading.client",
-        "documentation": {}
-    },
-    {
-        "label": "MarketOrderRequest",
-        "importPath": "alpaca.trading.requests",
-        "description": "alpaca.trading.requests",
-        "isExtraImport": true,
-        "detail": "alpaca.trading.requests",
-        "documentation": {}
-    },
-    {
-        "label": "LimitOrderRequest",
-        "importPath": "alpaca.trading.requests",
-        "description": "alpaca.trading.requests",
-        "isExtraImport": true,
-        "detail": "alpaca.trading.requests",
         "documentation": {}
     },
     {
@@ -4165,6 +4125,22 @@
         "description": "matplotlib.animation",
         "isExtraImport": true,
         "detail": "matplotlib.animation",
+        "documentation": {}
+    },
+    {
+        "label": "REST",
+        "importPath": "alpaca_trade_api.rest",
+        "description": "alpaca_trade_api.rest",
+        "isExtraImport": true,
+        "detail": "alpaca_trade_api.rest",
+        "documentation": {}
+    },
+    {
+        "label": "TimeFrame",
+        "importPath": "alpaca_trade_api.rest",
+        "description": "alpaca_trade_api.rest",
+        "isExtraImport": true,
+        "detail": "alpaca_trade_api.rest",
         "documentation": {}
     },
     {
@@ -6548,6 +6524,114 @@
         "documentation": {}
     },
     {
+        "label": "Config",
+        "kind": 6,
+        "importPath": "examples.cron_job.app",
+        "description": "examples.cron_job.app",
+        "peekOfCode": "class Config:\n    SCHEDULER_API_ENABLED = True\napp = Flask(__name__)\napp.config.from_object(Config())\nscheduler = APScheduler()\ndef scheduled_task():\n    run_drl_task()\n    print(\"++++++++++run+++++++++\")\n@app.route('/')\ndef index():",
+        "detail": "examples.cron_job.app",
+        "documentation": {}
+    },
+    {
+        "label": "scheduled_task",
+        "kind": 2,
+        "importPath": "examples.cron_job.app",
+        "description": "examples.cron_job.app",
+        "peekOfCode": "def scheduled_task():\n    run_drl_task()\n    print(\"++++++++++run+++++++++\")\n@app.route('/')\ndef index():\n    return 'DRL Task Scheduler is running.'\nif __name__ == '__main__':\n    # scheduler.init_app(app)\n    # Schedule the task to run every 10 seconds\n    scheduler.add_job(id='Scheduled Task', func=scheduled_task, trigger='interval', seconds=10)",
+        "detail": "examples.cron_job.app",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "examples.cron_job.app",
+        "description": "examples.cron_job.app",
+        "peekOfCode": "def index():\n    return 'DRL Task Scheduler is running.'\nif __name__ == '__main__':\n    # scheduler.init_app(app)\n    # Schedule the task to run every 10 seconds\n    scheduler.add_job(id='Scheduled Task', func=scheduled_task, trigger='interval', seconds=10)\n    scheduler.start()\n    app.run(debug=True)",
+        "detail": "examples.cron_job.app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "examples.cron_job.app",
+        "description": "examples.cron_job.app",
+        "peekOfCode": "app = Flask(__name__)\napp.config.from_object(Config())\nscheduler = APScheduler()\ndef scheduled_task():\n    run_drl_task()\n    print(\"++++++++++run+++++++++\")\n@app.route('/')\ndef index():\n    return 'DRL Task Scheduler is running.'\nif __name__ == '__main__':",
+        "detail": "examples.cron_job.app",
+        "documentation": {}
+    },
+    {
+        "label": "scheduler",
+        "kind": 5,
+        "importPath": "examples.cron_job.app",
+        "description": "examples.cron_job.app",
+        "peekOfCode": "scheduler = APScheduler()\ndef scheduled_task():\n    run_drl_task()\n    print(\"++++++++++run+++++++++\")\n@app.route('/')\ndef index():\n    return 'DRL Task Scheduler is running.'\nif __name__ == '__main__':\n    # scheduler.init_app(app)\n    # Schedule the task to run every 10 seconds",
+        "detail": "examples.cron_job.app",
+        "documentation": {}
+    },
+    {
+        "label": "run_drl_task",
+        "kind": 2,
+        "importPath": "examples.cron_job.drl_task",
+        "description": "examples.cron_job.drl_task",
+        "peekOfCode": "def run_drl_task():\n    print(\"=========Submit Order=======\")\n    # api = tradeapi.REST(API_KEY, API_SECRET, API_BASE_URL, api_version='v2')\n    # account = api.get_account()\n    # print(f\"Account status: {account.status}\")\n    # symbol = 'CAT'\n    # qty = 1  # Quantity to buy\n    # sharpe = 0.4\n    # if (sharpe > - 94):\n    #     buy_order = api.submit_order(",
+        "detail": "examples.cron_job.drl_task",
+        "documentation": {}
+    },
+    {
+        "label": "API_KEY",
+        "kind": 5,
+        "importPath": "examples.cron_job.drl_task",
+        "description": "examples.cron_job.drl_task",
+        "peekOfCode": "API_KEY = \"PKEJH4W0URAU56SHKQW3\"\nAPI_SECRET = \"9g6xpk2x2RiBeV5Cy48WdpxCU51chZx91Lj8x6Ow\"\nAPI_BASE_URL = 'https://paper-api.alpaca.markets'\n# api = tradeapi.REST(API_KEY, API_SECRET, API_BASE_URL, api_version='v2')\ndef run_drl_task():\n    print(\"=========Submit Order=======\")\n    # api = tradeapi.REST(API_KEY, API_SECRET, API_BASE_URL, api_version='v2')\n    # account = api.get_account()\n    # print(f\"Account status: {account.status}\")\n    # symbol = 'CAT'",
+        "detail": "examples.cron_job.drl_task",
+        "documentation": {}
+    },
+    {
+        "label": "API_SECRET",
+        "kind": 5,
+        "importPath": "examples.cron_job.drl_task",
+        "description": "examples.cron_job.drl_task",
+        "peekOfCode": "API_SECRET = \"9g6xpk2x2RiBeV5Cy48WdpxCU51chZx91Lj8x6Ow\"\nAPI_BASE_URL = 'https://paper-api.alpaca.markets'\n# api = tradeapi.REST(API_KEY, API_SECRET, API_BASE_URL, api_version='v2')\ndef run_drl_task():\n    print(\"=========Submit Order=======\")\n    # api = tradeapi.REST(API_KEY, API_SECRET, API_BASE_URL, api_version='v2')\n    # account = api.get_account()\n    # print(f\"Account status: {account.status}\")\n    # symbol = 'CAT'\n    # qty = 1  # Quantity to buy",
+        "detail": "examples.cron_job.drl_task",
+        "documentation": {}
+    },
+    {
+        "label": "API_BASE_URL",
+        "kind": 5,
+        "importPath": "examples.cron_job.drl_task",
+        "description": "examples.cron_job.drl_task",
+        "peekOfCode": "API_BASE_URL = 'https://paper-api.alpaca.markets'\n# api = tradeapi.REST(API_KEY, API_SECRET, API_BASE_URL, api_version='v2')\ndef run_drl_task():\n    print(\"=========Submit Order=======\")\n    # api = tradeapi.REST(API_KEY, API_SECRET, API_BASE_URL, api_version='v2')\n    # account = api.get_account()\n    # print(f\"Account status: {account.status}\")\n    # symbol = 'CAT'\n    # qty = 1  # Quantity to buy\n    # sharpe = 0.4",
+        "detail": "examples.cron_job.drl_task",
+        "documentation": {}
+    },
+    {
+        "label": "API_KEY",
+        "kind": 5,
+        "importPath": "examples.cron_job.setup",
+        "description": "examples.cron_job.setup",
+        "peekOfCode": "API_KEY = \"PKEJH4W0URAU56SHKQW3\"\nAPI_SECRET = \"9g6xpk2x2RiBeV5Cy48WdpxCU51chZx91Lj8x6Ow\"\nAPI_BASE_URL = 'https://paper-api.alpaca.markets'",
+        "detail": "examples.cron_job.setup",
+        "documentation": {}
+    },
+    {
+        "label": "API_SECRET",
+        "kind": 5,
+        "importPath": "examples.cron_job.setup",
+        "description": "examples.cron_job.setup",
+        "peekOfCode": "API_SECRET = \"9g6xpk2x2RiBeV5Cy48WdpxCU51chZx91Lj8x6Ow\"\nAPI_BASE_URL = 'https://paper-api.alpaca.markets'",
+        "detail": "examples.cron_job.setup",
+        "documentation": {}
+    },
+    {
+        "label": "API_BASE_URL",
+        "kind": 5,
+        "importPath": "examples.cron_job.setup",
+        "description": "examples.cron_job.setup",
+        "peekOfCode": "API_BASE_URL = 'https://paper-api.alpaca.markets'",
+        "detail": "examples.cron_job.setup",
+        "documentation": {}
+    },
+    {
         "label": "run_colab",
         "kind": 2,
         "importPath": "examples.jojoTrader.InstallFlsk",
@@ -7373,6 +7457,69 @@
         "description": "examples.samples.submitOrder",
         "peekOfCode": "api = tradeapi.REST(API_KEY, API_SECRET, API_BASE_URL, api_version='v2')\ntry:\n    # Get account information\n    account = api.get_account()\n    print(f\"Account status: {account.status}\")\n    # Define order parameters\n    symbol = 'AAPL'\n    qty = 1  # Quantity to buy\n    # Place a buy order\n    buy_order = api.submit_order(",
         "detail": "examples.samples.submitOrder",
+        "documentation": {}
+    },
+    {
+        "label": "get_market_data",
+        "kind": 2,
+        "importPath": "examples.samples.submit_order",
+        "description": "examples.samples.submit_order",
+        "peekOfCode": "def get_market_data():\n    # Fetch recent market data for a specific stock\n    barset = api.get_bars(\"AAPL\", TimeFrame.Day, \"2023-01-01\", \"2024-01-01\").df\n    return barset\ndef place_order():\n    # Place an order for a specific stock\n    api.submit_order(\n        symbol=\"AAPL\",\n        qty=1,\n        side=\"buy\",",
+        "detail": "examples.samples.submit_order",
+        "documentation": {}
+    },
+    {
+        "label": "place_order",
+        "kind": 2,
+        "importPath": "examples.samples.submit_order",
+        "description": "examples.samples.submit_order",
+        "peekOfCode": "def place_order():\n    # Place an order for a specific stock\n    api.submit_order(\n        symbol=\"AAPL\",\n        qty=1,\n        side=\"buy\",\n        type=\"market\",\n        time_in_force=\"gtc\"\n    )\ndef train_and_trade():",
+        "detail": "examples.samples.submit_order",
+        "documentation": {}
+    },
+    {
+        "label": "train_and_trade",
+        "kind": 2,
+        "importPath": "examples.samples.submit_order",
+        "description": "examples.samples.submit_order",
+        "peekOfCode": "def train_and_trade():\n    # Load market data and train a DRL model\n    data = get_market_data()\n    # Assuming you have a pre-trained model or a specific logic here\n    # Example: model = PPO('MlpPolicy', env, verbose=1)\n    # model.learn(total_timesteps=10000)\n    # Decision-making logic (simplified for illustration)\n    action = \"buy\"  # This would come from the model prediction\n    if action == \"buy\":\n        place_order()",
+        "detail": "examples.samples.submit_order",
+        "documentation": {}
+    },
+    {
+        "label": "API_KEY",
+        "kind": 5,
+        "importPath": "examples.samples.submit_order",
+        "description": "examples.samples.submit_order",
+        "peekOfCode": "API_KEY = \"PKEJH4W0URAU56SHKQW3\"\nAPI_SECRET = \"9g6xpk2x2RiBeV5Cy48WdpxCU51chZx91Lj8x6Ow\"\nAPI_BASE_URL = 'https://paper-api.alpaca.markets'\napi = REST(API_KEY, API_SECRET, API_BASE_URL, api_version='v2')\n# Initialize Alpaca API\ndef get_market_data():\n    # Fetch recent market data for a specific stock\n    barset = api.get_bars(\"AAPL\", TimeFrame.Day, \"2023-01-01\", \"2024-01-01\").df\n    return barset\ndef place_order():",
+        "detail": "examples.samples.submit_order",
+        "documentation": {}
+    },
+    {
+        "label": "API_SECRET",
+        "kind": 5,
+        "importPath": "examples.samples.submit_order",
+        "description": "examples.samples.submit_order",
+        "peekOfCode": "API_SECRET = \"9g6xpk2x2RiBeV5Cy48WdpxCU51chZx91Lj8x6Ow\"\nAPI_BASE_URL = 'https://paper-api.alpaca.markets'\napi = REST(API_KEY, API_SECRET, API_BASE_URL, api_version='v2')\n# Initialize Alpaca API\ndef get_market_data():\n    # Fetch recent market data for a specific stock\n    barset = api.get_bars(\"AAPL\", TimeFrame.Day, \"2023-01-01\", \"2024-01-01\").df\n    return barset\ndef place_order():\n    # Place an order for a specific stock",
+        "detail": "examples.samples.submit_order",
+        "documentation": {}
+    },
+    {
+        "label": "API_BASE_URL",
+        "kind": 5,
+        "importPath": "examples.samples.submit_order",
+        "description": "examples.samples.submit_order",
+        "peekOfCode": "API_BASE_URL = 'https://paper-api.alpaca.markets'\napi = REST(API_KEY, API_SECRET, API_BASE_URL, api_version='v2')\n# Initialize Alpaca API\ndef get_market_data():\n    # Fetch recent market data for a specific stock\n    barset = api.get_bars(\"AAPL\", TimeFrame.Day, \"2023-01-01\", \"2024-01-01\").df\n    return barset\ndef place_order():\n    # Place an order for a specific stock\n    api.submit_order(",
+        "detail": "examples.samples.submit_order",
+        "documentation": {}
+    },
+    {
+        "label": "api",
+        "kind": 5,
+        "importPath": "examples.samples.submit_order",
+        "description": "examples.samples.submit_order",
+        "peekOfCode": "api = REST(API_KEY, API_SECRET, API_BASE_URL, api_version='v2')\n# Initialize Alpaca API\ndef get_market_data():\n    # Fetch recent market data for a specific stock\n    barset = api.get_bars(\"AAPL\", TimeFrame.Day, \"2023-01-01\", \"2024-01-01\").df\n    return barset\ndef place_order():\n    # Place an order for a specific stock\n    api.submit_order(\n        symbol=\"AAPL\",",
+        "detail": "examples.samples.submit_order",
         "documentation": {}
     },
     {
