@@ -76,3 +76,8 @@ git init
         <img src="jojo/img/386622_facebook_icon.png" alt="Facebook Button" style="width: 20px; height: 20px;">
   </a>
 </div>
+How Configure automation to run the python script  four times a day using Vercel's scheduling show source code project structure and folders and files I have vercel and git hub repo show how to deploy and version control on vrcel and git hub.
+step-by-step detailed guide and code to configuring automation to run a Python script called main.py four times a day using Vercel's scheduling, along with how to set up your project structure, version control with GitHub, how to deploy on Vercel and how to run the script automaticaly or manually from a control panel.
+The script main.py create a file called hello.txt with the text  "step-by-step detailed guide and code" the user should have an access to the file on demand
+
+

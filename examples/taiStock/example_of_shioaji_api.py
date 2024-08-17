@@ -12,7 +12,7 @@ from finrl import config_tickers
 from finrl.config import INDICATORS
 from finrl.meta.preprocessor.preprocessors import data_split
 from finrl.meta.preprocessor.preprocessors import FeatureEngineer
-from processor_sinopac import SinopacProcessor
+from examples.processor_sinopac import SinopacProcessor
 from shioajidownloader import SinopacDownloader
 
 

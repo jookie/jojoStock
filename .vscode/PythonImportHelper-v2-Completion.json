@@ -4154,26 +4154,26 @@
     },
     {
         "label": "SinopacProcessor",
-        "importPath": "processor_sinopac",
-        "description": "processor_sinopac",
+        "importPath": "examples.processor_sinopac",
+        "description": "examples.processor_sinopac",
         "isExtraImport": true,
-        "detail": "processor_sinopac",
+        "detail": "examples.processor_sinopac",
         "documentation": {}
     },
     {
         "label": "SinopacProcessor",
-        "importPath": "processor_sinopac",
-        "description": "processor_sinopac",
+        "importPath": "examples.processor_sinopac",
+        "description": "examples.processor_sinopac",
         "isExtraImport": true,
-        "detail": "processor_sinopac",
+        "detail": "examples.processor_sinopac",
         "documentation": {}
     },
     {
         "label": "SinopacProcessor",
-        "importPath": "processor_sinopac",
-        "description": "processor_sinopac",
+        "importPath": "examples.processor_sinopac",
+        "description": "examples.processor_sinopac",
         "isExtraImport": true,
-        "detail": "processor_sinopac",
+        "detail": "examples.processor_sinopac",
         "documentation": {}
     },
     {
@@ -6566,42 +6566,6 @@
         "description": "examples.cron_job.app",
         "peekOfCode": "scheduler = APScheduler()\ndef scheduled_task():\n    run_drl_task()\n    print(\"++++++++++run+++++++++\")\n@app.route('/')\ndef index():\n    return 'DRL Task Scheduler is running.'\nif __name__ == '__main__':\n    # scheduler.init_app(app)\n    # Schedule the task to run every 10 seconds",
         "detail": "examples.cron_job.app",
-        "documentation": {}
-    },
-    {
-        "label": "run_drl_task",
-        "kind": 2,
-        "importPath": "examples.cron_job.drl_task",
-        "description": "examples.cron_job.drl_task",
-        "peekOfCode": "def run_drl_task():\n    print(\"=========Submit Order=======\")\n    # api = tradeapi.REST(API_KEY, API_SECRET, API_BASE_URL, api_version='v2')\n    # account = api.get_account()\n    # print(f\"Account status: {account.status}\")\n    # symbol = 'CAT'\n    # qty = 1  # Quantity to buy\n    # sharpe = 0.4\n    # if (sharpe > - 94):\n    #     buy_order = api.submit_order(",
-        "detail": "examples.cron_job.drl_task",
-        "documentation": {}
-    },
-    {
-        "label": "API_KEY",
-        "kind": 5,
-        "importPath": "examples.cron_job.drl_task",
-        "description": "examples.cron_job.drl_task",
-        "peekOfCode": "API_KEY = \"PKEJH4W0URAU56SHKQW3\"\nAPI_SECRET = \"9g6xpk2x2RiBeV5Cy48WdpxCU51chZx91Lj8x6Ow\"\nAPI_BASE_URL = 'https://paper-api.alpaca.markets'\n# api = tradeapi.REST(API_KEY, API_SECRET, API_BASE_URL, api_version='v2')\ndef run_drl_task():\n    print(\"=========Submit Order=======\")\n    # api = tradeapi.REST(API_KEY, API_SECRET, API_BASE_URL, api_version='v2')\n    # account = api.get_account()\n    # print(f\"Account status: {account.status}\")\n    # symbol = 'CAT'",
-        "detail": "examples.cron_job.drl_task",
-        "documentation": {}
-    },
-    {
-        "label": "API_SECRET",
-        "kind": 5,
-        "importPath": "examples.cron_job.drl_task",
-        "description": "examples.cron_job.drl_task",
-        "peekOfCode": "API_SECRET = \"9g6xpk2x2RiBeV5Cy48WdpxCU51chZx91Lj8x6Ow\"\nAPI_BASE_URL = 'https://paper-api.alpaca.markets'\n# api = tradeapi.REST(API_KEY, API_SECRET, API_BASE_URL, api_version='v2')\ndef run_drl_task():\n    print(\"=========Submit Order=======\")\n    # api = tradeapi.REST(API_KEY, API_SECRET, API_BASE_URL, api_version='v2')\n    # account = api.get_account()\n    # print(f\"Account status: {account.status}\")\n    # symbol = 'CAT'\n    # qty = 1  # Quantity to buy",
-        "detail": "examples.cron_job.drl_task",
-        "documentation": {}
-    },
-    {
-        "label": "API_BASE_URL",
-        "kind": 5,
-        "importPath": "examples.cron_job.drl_task",
-        "description": "examples.cron_job.drl_task",
-        "peekOfCode": "API_BASE_URL = 'https://paper-api.alpaca.markets'\n# api = tradeapi.REST(API_KEY, API_SECRET, API_BASE_URL, api_version='v2')\ndef run_drl_task():\n    print(\"=========Submit Order=======\")\n    # api = tradeapi.REST(API_KEY, API_SECRET, API_BASE_URL, api_version='v2')\n    # account = api.get_account()\n    # print(f\"Account status: {account.status}\")\n    # symbol = 'CAT'\n    # qty = 1  # Quantity to buy\n    # sharpe = 0.4",
-        "detail": "examples.cron_job.drl_task",
         "documentation": {}
     },
     {
@@ -9089,6 +9053,15 @@
         "documentation": {}
     },
     {
+        "label": "SinopacProcessor",
+        "kind": 6,
+        "importPath": "examples.processor_sinopac",
+        "description": "examples.processor_sinopac",
+        "peekOfCode": "class SinopacProcessor:\n    def __init__(self, API_KEY=None, API_SECRET=None, api=None):\n        if api is None:\n            try:\n                self.api = sj.Shioaji()\n                self.api.login(\n                    api_key=API_KEY,\n                    secret_key=API_SECRET,\n                    contracts_cb=lambda security_type: print(\n                        f\"{repr(security_type)} fetch done.\"",
+        "detail": "examples.processor_sinopac",
+        "documentation": {}
+    },
+    {
         "label": "ticker_list",
         "kind": 2,
         "importPath": "unit_tests.downloaders.test_alpaca_downloader",
@@ -9680,15 +9653,6 @@
         "description": "venv.bin.rstpep2html",
         "peekOfCode": "description = ('Generates (X)HTML from reStructuredText-format PEP files.  '\n               + default_description)\npublish_cmdline(reader_name='pep', writer_name='pep_html',\n                description=description)",
         "detail": "venv.bin.rstpep2html",
-        "documentation": {}
-    },
-    {
-        "label": "SinopacProcessor",
-        "kind": 6,
-        "importPath": "processor_sinopac",
-        "description": "processor_sinopac",
-        "peekOfCode": "class SinopacProcessor:\n    def __init__(self, API_KEY=None, API_SECRET=None, api=None):\n        if api is None:\n            try:\n                self.api = sj.Shioaji()\n                self.api.login(\n                    api_key=API_KEY,\n                    secret_key=API_SECRET,\n                    contracts_cb=lambda security_type: print(\n                        f\"{repr(security_type)} fetch done.\"",
-        "detail": "processor_sinopac",
         "documentation": {}
     }
 ]
