@@ -171,6 +171,9 @@ We used the Deep Q-Learning based recommendation framework that considers curren
 
 ## Publications
 
+<details>
+<summary>Click to view publications</summary>
+
 | Title | Conference/Journal | Link | Citations | Year |
 |-------|-------------------|------|-----------|------|
 | Dynamic Datasets and Market Environments for Financial Reinforcement Learning | Machine Learning - Springer Nature | [paper](https://arxiv.org/abs/2304.13174) [code](https://github.com/AI4Finance-Foundation/FinRL-Meta) | 7 | 2024 |
@@ -180,6 +183,7 @@ We used the Deep Q-Learning based recommendation framework that considers curren
 | Deep reinforcement learning for automated stock trading: An ensemble strategy | ACM International Conference on AI in Finance (ICAIF) | [paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3690996) [code](https://github.com/AI4Finance-Foundation/FinRL-Meta/blob/master/tutorials/2-Advance/FinRL_Ensemble_StockTrading_ICAIF_2020/FinRL_Ensemble_StockTrading_ICAIF_2020.ipynb) | 154 | 2020 |
 | Practical deep reinforcement learning approach for stock trading | NeurIPS 2018 Workshop on Challenges and Opportunities for AI in Financial Services | [paper](https://arxiv.org/abs/1811.07522) [code](https://github.com/AI4Finance-Foundation/DQN-DDPG_Stock_Trading](https://github.com/AI4Finance-Foundation/FinRL/tree/master/examples)) | 164 | 2018 |
 
+</details>
 
 ## News
 Returns latest news articles across stocks and crypto. 

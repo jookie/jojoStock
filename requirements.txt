@@ -1,8 +1,8 @@
 # market data & paper trading API
 yfinance # yahoo finance
 ta # technical analysis
-alpaca_trade_api>=2.1.0 # alpaca trading API v2 (paper trading) 
-ccxt>=1.66.32  # cryptocurrency trading API market data 
+alpaca_trade_api>=2.1.0 # alpaca trading API v2 (papeccxt>=1.66.32  # cryptocurrency trading API market data r trading) 
+
 exchange_calendars==3.6.3 # exchange trading calendar
 importlib-metadata==4.13.0 # for ccxt 
 jqdatasdk   # for china market data

@@ -1,5 +1,102 @@
 [
     {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Regex",
+        "importPath": "alpacalib.regex",
+        "description": "alpacalib.regex",
+        "isExtraImport": true,
+        "detail": "alpacalib.regex",
+        "documentation": {}
+    },
+    {
+        "label": "RegexError",
+        "importPath": "alpacalib.regex",
+        "description": "alpacalib.regex",
+        "isExtraImport": true,
+        "detail": "alpacalib.regex",
+        "documentation": {}
+    },
+    {
+        "label": "NFA",
+        "importPath": "alpacalib.nfa",
+        "description": "alpacalib.nfa",
+        "isExtraImport": true,
+        "detail": "alpacalib.nfa",
+        "documentation": {}
+    },
+    {
+        "label": "DFA",
+        "importPath": "alpacalib.dfa",
+        "description": "alpacalib.dfa",
+        "isExtraImport": true,
+        "detail": "alpacalib.dfa",
+        "documentation": {}
+    },
+    {
+        "label": "Dot",
+        "importPath": "alpacalib.dot",
+        "description": "alpacalib.dot",
+        "isExtraImport": true,
+        "detail": "alpacalib.dot",
+        "documentation": {}
+    },
+    {
+        "label": "Options",
+        "importPath": "alpacalib.options",
+        "description": "alpacalib.options",
+        "isExtraImport": true,
+        "detail": "alpacalib.options",
+        "documentation": {}
+    },
+    {
+        "label": "OptionsError",
+        "importPath": "alpacalib.options",
+        "description": "alpacalib.options",
+        "isExtraImport": true,
+        "detail": "alpacalib.options",
+        "documentation": {}
+    },
+    {
+        "label": "Input",
+        "importPath": "alpacalib.input",
+        "description": "alpacalib.input",
+        "isExtraImport": true,
+        "detail": "alpacalib.input",
+        "documentation": {}
+    },
+    {
+        "label": "InputError",
+        "importPath": "alpacalib.input",
+        "description": "alpacalib.input",
+        "isExtraImport": true,
+        "detail": "alpacalib.input",
+        "documentation": {}
+    },
+    {
+        "label": "Output",
+        "importPath": "alpacalib.output",
+        "description": "alpacalib.output",
+        "isExtraImport": true,
+        "detail": "alpacalib.output",
+        "documentation": {}
+    },
+    {
+        "label": "OutputError",
+        "importPath": "alpacalib.output",
+        "description": "alpacalib.output",
+        "isExtraImport": true,
+        "detail": "alpacalib.output",
+        "documentation": {}
+    },
+    {
         "label": "datetime",
         "kind": 6,
         "isExtraImport": true,
@@ -15,15 +112,6 @@
         "importPath": "os",
         "description": "os",
         "detail": "os",
-        "documentation": {}
-    },
-    {
-        "label": "sys",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "sys",
-        "description": "sys",
-        "detail": "sys",
         "documentation": {}
     },
     {
@@ -281,6 +369,15 @@
         "description": "docutils.writers.odf_odt",
         "isExtraImport": true,
         "detail": "docutils.writers.odf_odt",
+        "documentation": {}
+    },
+    {
+        "label": "Alpaca",
+        "kind": 6,
+        "importPath": "bin.alpaca",
+        "description": "bin.alpaca",
+        "peekOfCode": "class Alpaca:\n    def main():\n        try:\n            Options.parse(sys.argv[1:])\n        except OptionsError as err:\n            print(err.args[0])\n            print()\n            Alpaca.show_help()\n            return\n        if Options.is_show_help():",
+        "detail": "bin.alpaca",
         "documentation": {}
     },
     {
